@@ -1,0 +1,74 @@
+
+.app.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.app.light h1 {
+  color: #000000;
+}
+
+.app.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.app.dark h1 {
+  color: #ffffff;
+}
+:root {
+  --primary-color: #007bff;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #6c757d;
+    --background-color: #343a40;
+    --text-color: #f8f9fa;
+  }
+}
+.dark{
+  background-color: black;
+  color: red;
+}
+body.dark-mode{
+	background-color: #333;
+	color: #f7f7f7;
+}
+.jumpers{
+	padding: 16px;
+	background-color: #fff;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.dark-mode{
+	background-color: #222;
+	box-shadow: 0 0 4px rgba(255,255,255,0.2);
+}
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border: rgb(73, 143, 229);
+  background-color: #46dc94;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #080d14;
+}
+
+button:active {
+  background-color: #0e151c;
+}
+.modes{
+  padding-bottom: 10px;
+  
+}
