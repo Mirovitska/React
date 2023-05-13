@@ -2,9 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import {increaseFontSize} from '../App.js';
 import {decreaseFontSize} from '../App.js';
+import '../App.css';
 
 function Header(){
     return (
+      
         <nav>
               <NavLink to="/"> <a><p>Account</p></a></NavLink> 
               <NavLink to="/settings"><a><p>Settings</p></a></NavLink> 
@@ -15,5 +17,6 @@ function Header(){
        </a>
        
         </nav>
+
 )}
 export default Header;

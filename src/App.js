@@ -2,17 +2,23 @@ import logo from './logo.svg';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import TopBlock from './components/TopBlock';
 import BottomBlock from './components/BottomBlock';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Messages from './pages/Messages';
 import Settings from './pages/Settings';
+import ChatModal from './components/chatModal';
 
 
 import React, { useState } from 'react';
 
 function App() {
+  // const [statechat, setStatechat] = useState = true;
+  // const chatState = ()=>{
+  //   setStatechat(!statechat);
+  // }
  
   const [mode, setMode] = useState(getInitialMode());
   const [fontSize, setFontSize] = useState(16);
@@ -53,11 +59,14 @@ function App() {
               </div>
               <Header />
 
-              <div className="nowrap">
+              <div className="nowrap App">
 
                 <TopBlock />
 
                 <BottomBlock />
+      
+                <ChatModal/>
+                {/* <button onClick={chatState}>Show chat</button> */}
 
               </div>
 
