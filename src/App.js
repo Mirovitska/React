@@ -48,6 +48,7 @@ function App() {
     <body>
       <main >
         <div >
+          
           <div className={`jumpers app ${mode}`} style={{ fontSize: `${fontSize}px` }}>
             <div class="container" >
               <div className='modes'>
@@ -58,7 +59,7 @@ function App() {
               <button onClick={decreaseFontSize}>-</button>
               </div>
               <Header />
-
+            
               <div className="nowrap App">
 
                 <TopBlock />
